@@ -33,6 +33,8 @@ const ygui = {
                     }
                     break;
                 case "labelOnly":
+                    inputElem = document.createElement("span");
+                    inputElem.style.display = "none!important";
                     break;
                 default:
                     var inputElem = document.createElement("input");
