@@ -32,10 +32,6 @@ const ygui = {
                         inputElem.appendChild(optionElem);
                     }
                     break;
-                case "labelOnly":
-                    inputElem = document.createElement("span");
-                    inputElem.style.display = "none!important";
-                    break;
                 default:
                     var inputElem = document.createElement("input");
                     inputElem.type = field.type;
