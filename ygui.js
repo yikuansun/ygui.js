@@ -6,7 +6,7 @@ https://github.com/yikuansun/ygui.js
 
 const ygui = {
     buildGUIsection: function (fields, container=document.body) {
-        var inputs_out = [];
+        var inputs_out = {};
     
         var table = document.createElement("table");
         container.appendChild(table);
@@ -46,7 +46,7 @@ const ygui = {
                 inputElem.setAttribute(attribute, field.attr[attribute]);
             }
     
-            inputs_out.push(inputElem);
+            inputs_out[field.id] = inputElem;
         }
     
         return inputs_out;
