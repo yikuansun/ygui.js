@@ -17,7 +17,7 @@ jobs:
         uses: jossydevers/minify-js@v1.0.0
         with:
           directory: 'ygui.js' # (OPTIONAL)
-          output: '' # (OPTIONAL)
+          output: './' # (OPTIONAL)
           
       # Auto-commit to repository
       - uses: stefanzweifel/git-auto-commit-action@v4
